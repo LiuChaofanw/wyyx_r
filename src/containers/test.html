@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<div id="login">
+  <div className="img_container">
+    <img src="../../common/images/classsify/profile.png"/>
+  </div>
+  <div className="login_mail"  className="{off: isPhone}">
+    <div className="content">
+      <div className="user">
+        <input placeholder="邮箱账号" v-model="userMail"/>
+      </div>
+      <div className="user">
+        <input placeholder="密码" v-model="passerword"/>
+      </div>
+      <div className="forget_password">
+        <span className="register">注册账号</span>
+        <span className="forget">忘记密码</span>
+      </div>
+    </div>
+  </div>
+  <div className="login_phone" className="{off: !isPhone}">
+    <div className="user">
+      <input placeholder="请输入手机号" v-model="userPhone"/>
+    </div>
+    <div className="user">
+      <input placeholder="请输入短信验证码" v-model="code"/>
+      <span>{{computedTime ? '已发送'+computedTime+'s':'获取验证码'}}</span>
+    </div>
+    <div className="forget_password">
+      <span className="register">遇到问题？</span>
+      <span className="forget">使用密码验证登陆</span>
+    </div>
+  </div>
+  <div className="btns">
+    <div className="login">
+      <div className="phone" @click="submit">
+        <span>登录</span>
+      </div>
+      <div className="phone mail" @click="isPhone = !isPhone">
+        <span>其他登录方式</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

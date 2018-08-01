@@ -1,0 +1,38 @@
+
+@rem:750/10rem;
+@import "../../../assets/css/mixins";
+.home_swiper{
+  .swiper-container{
+    height: 400/@rem;
+    width: 750/@rem;
+    overflow: hidden;
+    .swiper-wrapper{
+      /*width: 200%;*/
+      height: 100%;
+      white-space: nowrap;
+      float: left;
+      .swiper-slide{
+        width: 750/@rem;
+        height: 100%;
+        display: inline-block;
+        img{
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+  .carousel_list{
+    height: 1rem;
+    line-height: 0.6rem;
+    box-sizing: border-box;
+    padding: 0 0.3rem;
+    .icon_container{
+      font-size: .33rem;
+      margin: 0 0.1rem;
+      .iconfont{
+        color: red;
+      }
+    }
+  }
+}

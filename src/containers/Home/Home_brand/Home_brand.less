@@ -1,0 +1,46 @@
+@rem:750/10rem;
+@import "../../../assets/css/mixins";
+.home_brand{
+  color: #333333;
+  font-size: .43rem;
+  .brand_header{
+    width: 750/@rem;
+    height: 110/@rem;
+    line-height: 110/@rem;
+    text-align: center;
+  }
+  .brand_list{
+    .clearFix;
+    margin: 0 16/@rem;
+    li:nth-child(2n){
+      margin-bottom: 8/@rem;
+    }
+    li:nth-child(2n+1){
+      margin: 0 8/@rem 8/@rem 0;
+    }
+    .brand_item{
+      height: 236/@rem;
+      width: 355/@rem;
+      float: left;
+      position: relative;
+      background-color: #f4f4f4;
+      &>div{
+        position: absolute;
+        top:0;
+        left:0;
+        font-size: .34rem;
+        margin: 20/@rem 0 0 20/@rem;
+        line-height: .5rem;
+      }
+      &>img{
+        height: 100%;
+        width: 100%;
+      }
+      .new{
+        height: 32/@rem;
+        width: 64/@rem;
+        margin-top: .1rem;
+      }
+    }
+  }
+}

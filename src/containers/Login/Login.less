@@ -1,0 +1,114 @@
+@rem:750/10rem;
+@import "../../assets/css/mixins";
+#login{
+  margin-top: 1.2rem;
+  padding: 0 30/@rem;
+  box-sizing: border-box;
+  .img_container{
+    text-align: center;
+    margin-bottom: 1rem;
+    &>img{
+      height: 62/@rem;
+      width: 192/@rem;
+      margin-top: 56/@rem;
+    }
+  }
+  .off{
+    display: none;
+  }
+  .login_mail{
+    .content{
+      height: 404/@rem;
+      width: 100%;
+      box-sizing: border-box;
+      .user{
+        text-align: center;
+        &>input{
+          font-size: .4rem;
+          border-bottom:1px solid #ccc;
+          padding: .4rem .1rem;
+          width: 100%;
+          box-sizing: border-box;
+          outline: none;
+        }
+      }
+      .forget_password{
+        .clearFix;
+        padding: .6rem .1rem;
+        width: 100%;
+        box-sizing: border-box;
+        font-size: .4rem;
+        color: #666;
+        .register{
+          float: left;
+        }
+        .forget{
+          float: right;
+        }
+      }
+    }
+  }
+  .login_phone{
+    height: 404/@rem;
+    width: 100%;
+    box-sizing: border-box;
+    .user{
+      font-size: .4rem;
+      white-space: nowrap;
+      &>input{
+        border-bottom:1px solid #ccc;
+        padding: .4rem .1rem;
+        width: 100%;
+        box-sizing: border-box;
+        outline: none;
+      }
+      &>span{
+        border: 1px solid #ccc;
+        display: inline-block;
+        margin-left: -2.5rem;
+        box-sizing: border-box;
+        padding: 15/@rem;
+        border-radius: 5/@rem;
+      }
+    }
+    .forget_password{
+      .clearFix;
+      padding: .6rem .1rem;
+      width: 100%;
+      box-sizing: border-box;
+      font-size: .4rem;
+      color: #666;
+      .register{
+        float: left;
+      }
+      .forget{
+        float: right;
+      }
+    }
+  }
+  .btns{
+    .login{
+      .phone{
+        text-align: center;
+        height: 90/@rem;
+        width: 666/@rem;
+        background-color: #b4282d;
+        color: #ffffff;
+        margin: auto;
+        font-size: 0;
+        line-height: 90/@rem;
+        margin-bottom: 32/@rem;
+        border: 1px solid #b4282d;
+        &.mail{
+          background-color: #F2F5F4;
+          color: #b4282d;
+        }
+        &>span{
+          display: inline-block;
+          font-size: .37rem;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}

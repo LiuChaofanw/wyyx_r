@@ -1,0 +1,48 @@
+@rem:750/10rem;
+@import "../../../assets/css/mixins";
+.special{
+  color: #333333;
+  font-size: .43rem;
+  .brand_header{
+    width: 750/@rem;
+    height: 110/@rem;
+    line-height: 110/@rem;
+    text-align: center;
+  }
+  .special_container{
+    .clearFix;
+    width: 100%;
+    overflow: hidden;
+    .special_list{
+      margin: 0 30/@rem 36/@rem 30/@rem;
+      width: 410%;
+      .clearFix;
+      .special_item{
+        float: left;
+        height: 500/@rem;
+        width: 575/@rem;
+        margin-right: .3rem;
+        img{
+          width: 575/@rem;
+          height: 390.6/@rem;
+        }
+        .special_name{
+          font-size: .37rem;
+          margin: .2rem 0;
+          .clearFix;
+          .left{
+            float: left;
+          }
+          .right{
+            float: right;
+            color: red;
+          }
+        }
+        .special_detail{
+          font-size: .32rem;
+          color: #999999;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+@rem: 750/10rem;
+@import "../../../assets/css/mixins";
+.swiper{
+  .swiper-container{
+    height: 400/@rem;
+    width: 100%;
+    .swiper-wrapper{
+      text-align: center;
+      height: 385/@rem;
+      width: 670/@rem;
+      margin: 0 .5rem;
+      .swiper-slide{
+        img{
+          height: 100%;
+          width: 95%;
+          border-radius: 8/@rem;
+        }
+        position: relative;
+        .mask{
+          background-color: rgba(255,255,255,.9);
+          line-height: .6rem;
+          padding-top: .4rem;
+          box-sizing: border-box;
+          height: 198/@rem;
+          width: 466/@rem;
+          position: absolute;
+          top:50%;
+          left: 50%;
+          transform: translateX(-50%) translateY(-50%);
+          .small{
+            font-size: .27rem;
+            color: #999999;
+            transform: scale(.8);
+          }
+          .name{
+            font-size: .4rem;
+            color: #333333;
+          }
+          .detail{
+            font-size: .37rem;
+            color: #333333;
+          }
+        }
+      }
+
+    }
+  }
+}

@@ -1,0 +1,73 @@
+@rem: 750/10rem;
+@import "../../../assets/css/mixins";
+.ten_hour{
+  padding-bottom: .5rem;
+  .ten_header{
+    text-align: center;
+    font-size: .43rem;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    color: #333333;
+  }
+  .swiper-container3{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 .4rem;
+    overflow: hidden;
+    .swiper-wrapper{
+      .swiper-slide{
+        width: 7.334rem;
+        margin-right: .4rem;
+        .self{
+          background-image: url("../imgs/message.png");
+          background-size: 100% 100%;
+          width: 7.3333rem;
+          height: 5.48rem;
+          padding: .507rem .5333rem 1.05rem;
+          color: #333;
+          background-repeat: no-repeat;
+          line-height: 1.2;
+          font-size: 24/@rem;
+          box-sizing: border-box;
+          margin-right: .4rem;
+          &:last-child{
+            margin: 0;
+          }
+          .title{
+            font-size: .32rem;
+            color: #7f7f7f;
+            text-align: center;
+            margin-bottom: .5rem;
+          }
+          .about{
+            text-align: center;
+            font-weight: bold;
+            font-size: .47rem;
+            margin: .2rem 0;
+          }
+          .chat{
+            font-size: .373rem;
+            line-height: 1.5;
+            text-align: center;
+            color: #333333;
+
+          }
+          .person{
+            text-align: center;
+            margin-top: .9rem;
+            &>img{
+              height: 46/@rem;
+              width: 46/@rem;
+              border-radius: 50%;
+              margin-left: -0.1rem;
+            }
+            &>span{
+              font-size: .33rem;
+            }
+          }
+        }
+      }
+
+    }
+  }
+}

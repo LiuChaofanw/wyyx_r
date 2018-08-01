@@ -1,0 +1,126 @@
+@rem: 750/10rem;
+@import "../../../assets/css/mixins";
+.select{
+  padding: 0 30/@rem;
+  margin-bottom: .5rem;
+  .foryou{
+    position: relative;
+    .text{
+      width: 690/@rem;
+      height: 120/@rem;
+      font-size: .42rem;
+      line-height: 120/@rem;
+      text-align: center;
+      color: #333333;
+    }
+    .yxtj{
+      position: absolute;
+      top: 140/@rem;
+      left: 50/@rem;
+      background-color: rgba(255,255,255,.9);
+      color: #333333;
+      border: 1px solid #d9d9d9;
+      height: .48rem;
+      padding: 0 .21rem;
+      line-height: .48rem;
+      border-radius: .26667rem;
+      font-size: .3rem;
+    }
+    .img_container{
+      border: 1px solid #d9d9d9;
+      border-radius: 8/@rem;
+      &>img{
+        height: 386/@rem;
+        width: 688/@rem;
+        border-radius: 5/@rem;
+      }
+      .name{
+        .clearFix;
+        font-size: .48rem;
+        .textOver;
+        padding: 0 .3rem;
+        color: #333333;
+        line-height: 1.5;
+        padding-top: .2rem;
+        .left{
+          float: left;
+        }
+        .right{
+          float: right;
+        }
+      }
+      .detail{
+        color: #7f7f7f;
+        font-size: .37rem;
+        line-height: 1.5;
+        padding: 0 .3rem;
+        margin-bottom: .7rem;
+      }
+    }
+  }
+  .select_detail{
+    margin-top: .3rem;
+    border: 1px solid #d9d9d9;
+    .clearFix;
+    .left{
+      float: left;
+      box-sizing: border-box;
+      padding: 0 30/@rem 0 20/@rem;
+      .name{
+        margin-top: .2rem;
+        &>img{
+          height: 46/@rem;
+          width: 46/@rem;
+          border-radius: 50%;
+        }
+        &>span{
+          .textOver;
+          display: inline-block;
+          color: #333333;
+          font-size: .26rem;
+          line-height: 1.2;
+          width: 120/@rem;
+          height: 24/rem;
+          transform: scale(.9);
+        }
+      }
+      .title{
+        .textOver;
+        font-size: .43rem;
+        line-height: 1.2;
+        color: #333333;
+        width: 4.7rem;
+        margin: .2rem 0;
+      }
+      .detail{
+        .textOver;
+        color: #7f7f7f;
+        font-size: .32rem;
+        line-height: 1.5;
+        width: 4.7rem;
+        margin: .2rem 0;
+      }
+    }
+    .right{
+      position: relative;
+      float: right;
+      .img_logo{
+        padding: 0 .2rem;
+        height: .48rem;
+        line-height: .48rem;
+        background-color: rgba(255,255,255,.9);
+        border-radius: .27rem;
+        border: 1px solid #d9d9d9;
+        font-size: .2rem;
+        position: absolute;
+        top: .1rem;
+        left: .1rem;
+        z-index: 100;
+      }
+      &>img{
+        height: 272/@rem;
+        width: 280/@rem;
+      }
+    }
+  }
+}

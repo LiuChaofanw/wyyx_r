@@ -1,0 +1,100 @@
+@rem: 750/10rem;
+@import "../../../assets/css/mixins";
+.more_good{
+  padding: 0 30/@rem 30/@rem 30/@rem;
+  background-color: #f4f4f4;
+  .more_header{
+    font-size: .37rem;
+    height: 140/@rem;
+    width: 690/@rem;
+    box-sizing: border-box;
+    padding: 80/@rem;
+    position: relative;
+    .left_line{
+      .bottom-border-1px(#000000);
+      height: 1px;
+      width: 35%;
+      position: absolute;
+      top:50%;
+      left: 0;
+      margin-top: 15/@rem;
+
+    }
+    .text{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .right_line{
+      .bottom-border-1px(#000000);
+      display: inline-block;
+      height: 1px;
+      width: 35%;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      margin-top: 15/@rem;
+    }
+  }
+  .content{
+    .img{
+      height: 451/@rem;
+      width: 642.3/@rem;
+      background-color: #ffffff;
+      padding: 24/@rem;
+      .img_container{
+        &>img{
+          width: 100%;
+          height: 360/@rem;
+        }
+      }
+      .text_container{
+        font-size: .37rem;
+        .textOver;
+        padding-top: .386rem;
+        padding-bottom: .37rem;
+        color: #333;
+      }
+    }
+    .imgs{
+      height: 451/@rem;
+      width: 642.3/@rem;
+      background-color: #ffffff;
+      padding: 24/@rem;
+      .img_container{
+        .clearFix;
+        .big{
+          float: left;
+          width: 70%;
+
+          &>img{
+            width: 100%;
+            height: 365/@rem;
+          }
+        }
+        .small{
+          font-size: 0;
+          float: left;
+          width: 25%;
+          height: 360/@rem;
+          margin-left: .1rem;
+          &>img{
+            height: 178/@rem;
+            width: 178/@rem;
+            &:nth-child(2){
+              margin-top: .1rem;
+            }
+          }
+        }
+      }
+      .text_container{
+        font-size: .37rem;
+        .textOver;
+        padding-top: .386rem;
+        padding-bottom: .37rem;
+        color: #333;
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+@rem:750/10rem;
+@import "../../../assets/css/mixins";
+.new_goods_list{
+  width: 100%;
+  height: 480/@rem;
+  overflow: hidden;
+  .new_goods{
+    width: 380%;
+    .clearFix;
+    .new_good{
+      width: 280/@rem;
+      height: 414/@rem;
+      margin-left: 30/@rem;
+      float: left;
+      a{
+        &>div:first-child{
+          background-color: #f3f3f3;
+          margin-bottom: .2rem;
+          &>img{
+            height: 280/@rem;
+            width: 280/@rem;
+          }
+        }
+
+        .new_goods_name{
+          .textOver;
+          font-size: .4rem;
+          color: #333333;
+          line-height: .6rem;
+        }
+        .new_goods_detail{
+          .textOver;
+          font-size: .35rem;
+          color: #999999;
+          line-height: .5rem;
+        }
+        .new_goods_price{
+          font-size: .35rem;
+          color: red;
+          line-height: .5rem;
+        }
+      }
+    }
+    .last_good{
+      float: left;
+      height: 285/@rem;
+      width: 280/@rem;
+      font-size: .4rem;
+      line-height: 280/@rem;
+      text-align: center;
+      box-sizing: border-box;
+      border: 8/@rem solid #f3f3f3;
+      &>a{
+        color: #333333;
+      }
+
+    }
+
+  }
+}
